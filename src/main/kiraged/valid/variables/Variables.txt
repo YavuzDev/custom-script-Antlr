@@ -1,0 +1,28 @@
+int x = 50; //Static int variable
+double y = 50.5; //Static double variable
+boolean z = true; //Static boolean variable
+
+var l = true; //Static boolean variable
+
+int k;//uninitialized value
+
+void test() {
+    int x = 50; //Local int variable
+    double y = 50.5; //Local double variable
+    boolean z = true; //Local boolean variable
+
+    x = x + 500; //Assigning to local variable
+    y = 20.0; //Assigning to local variable
+
+    print(x); //Printing local variable
+    print(y); //Printing local variable
+}
+
+test(); //Calling function
+
+x = 100; //Assigning to static variable
+z = false; //Assigning to static variable
+
+print(x); //Printing static variable
+print(z); //Printing static variable
+print(l); //Printing static variable

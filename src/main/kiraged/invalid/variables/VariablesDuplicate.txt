@@ -1,0 +1,2 @@
+int x = 500;
+boolean x = true;

@@ -1,0 +1,14 @@
+
+var randomNumber = randomInt(100);
+
+var guessed = false;
+
+while (guessed == false) {
+    var guess = askInt();
+    if (guess == randomNumber) {
+        print(true);
+        guessed = true;
+    } else {
+        print(false);
+    }
+}

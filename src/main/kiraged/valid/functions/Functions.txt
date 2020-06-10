@@ -1,0 +1,104 @@
+
+void testVoid() { //Normal functions
+    print(20);
+}
+
+void testVoidParameters(int x) {//Parameters
+    print(x);
+}
+
+int testInt() { //Function returning int
+    return 30;
+}
+
+int testIntParameters(int x) {
+    return x;
+}
+
+int testIntMath(int x, int y) {
+    return x * y + x + (x * y); // (100 * 200) + 100 + (100 * 200) = 20000 + 100 + 20000 = 40100
+}
+
+int testIntExpression() {//Used as an expression
+    return 1000;
+}
+
+int testIntLocal() {
+    int x = 40;
+    return x;
+}
+
+int x = 50;
+
+int testIntStatic() {
+    return x;
+}
+
+double testDouble() { //Function returning double
+    return 60.0;
+}
+
+/**
+* Scope check for parameters
+*/
+double testDoubleParameters(double x) {
+    return x;
+}
+
+double testDoubleLocal() {
+    double x = 70.0;
+    return x;
+}
+
+double y = 80.0;
+
+double testDoubleStatic() {
+    return y;
+}
+
+boolean testBoolean() { //Function returning boolean
+    return false;
+}
+
+boolean testBooleanParameters(boolean x) {
+    return x;
+}
+
+boolean testBooleanLocal() {
+    boolean x = false;
+    return x;
+}
+
+boolean z = true;
+
+boolean testBooleanStatic() {
+    return z;
+}
+
+testVoid();
+print(testInt()); //Printing functions with return type
+print(testIntParameters(100));
+print(testIntMath(100, 200));
+print(testIntExpression() + 1000);
+print(testIntLocal());
+print(testIntStatic());
+print(testDouble());
+print(testDoubleParameters(200.0));
+print(testDoubleLocal());
+print(testDoubleStatic());
+print(testBoolean());
+print(testBooleanParameters(false));
+print(testBooleanLocal());
+print(testBooleanStatic());
+
+void testReturn(int x) {
+    if (x == 100) {
+        print(x);
+        return;
+    }
+    print(x * 1000);
+    return;
+}
+
+testReturn(100);
+testReturn(10);

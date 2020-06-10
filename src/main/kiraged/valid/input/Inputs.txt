@@ -1,0 +1,12 @@
+int x = askInt(); //Static int input
+double d = askDouble(); //Static double input
+boolean b = askBoolean(); //Static boolean input
+
+var z = askInt(); //Static int input
+
+int test() {
+    return randomInt(askInt());//returning random number from input
+}
+
+print(test());
+

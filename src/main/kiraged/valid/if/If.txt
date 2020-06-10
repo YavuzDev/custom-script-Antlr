@@ -1,0 +1,44 @@
+int x = 50;
+
+if (x > 0 && x < 50) {
+    print(true);
+} else {
+    print(false);
+}
+
+double y = 100.0;
+
+if (y < 20.0) {
+   print(false);
+} else if (y > 20.0 && y <= 100.0) {
+   print(true);
+}
+
+int z = 500;
+
+if (z < 50) {
+    print(50);
+} else if (z == 100) {
+    print(100);
+} else if (z == 200) {
+    print(200);
+} else if (z == 300 || z == 500) {
+    print(500);
+} else {
+    print(false);
+}
+
+boolean k = true;
+
+if (k) {
+    print(true);
+}
+
+void testLocal() {
+    int x = 100;
+    if (x == 100) {
+        print(x);
+    }
+}
+
+testLocal();
