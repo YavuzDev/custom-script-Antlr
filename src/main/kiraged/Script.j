@@ -8,7 +8,7 @@
 new java/util/Random
 dup
 invokespecial java/util/Random/<init>()V
-ldc 100
+ldc 10
 invokevirtual java/util/Random/nextInt(I)I
 putstatic Script/randomNumber I
 iconst_0
@@ -19,17 +19,17 @@ return
 .limit stack 100
 .limit locals 100
 
-Label_2054574951_start:
+Label_2048834776_start:
 getstatic Script/guessed Z
 iconst_0
-if_icmpne Label_1991294891_else
+if_icmpne Label_1605283233_else
 iconst_1
-goto Label_1991294891_end
-Label_1991294891_else:
+goto Label_1605283233_end
+Label_1605283233_else:
 iconst_0
-Label_1991294891_end:
+Label_1605283233_end:
 iconst_1
-if_icmpne Label_2054574951_end
+if_icmpne Label_2048834776_end
 new java/util/Scanner
 dup
 getstatic java/lang/System/in Ljava/io/InputStream;
@@ -38,26 +38,26 @@ invokevirtual java/util/Scanner/nextInt()I
 istore 0
 iload 0
 getstatic Script/randomNumber I
-if_icmpne Label_1263877414_else
+if_icmpne Label_55331187_else
 iconst_1
-goto Label_1263877414_end
-Label_1263877414_else:
+goto Label_55331187_end
+Label_55331187_else:
 iconst_0
-Label_1263877414_end:
+Label_55331187_end:
 iconst_1
-if_icmpne Label_525571_else
+if_icmpne Label_868737467_else
 getstatic java/lang/System/out Ljava/io/PrintStream;
 iconst_1
 invokevirtual java/io/PrintStream/println(Z)V
 iconst_1
 putstatic Script/guessed Z
-goto Label_525571_end
-Label_525571_else:
+goto Label_868737467_end
+Label_868737467_else:
 getstatic java/lang/System/out Ljava/io/PrintStream;
 iconst_0
 invokevirtual java/io/PrintStream/println(Z)V
-Label_525571_end:
-goto Label_2054574951_start
-Label_2054574951_end:
+Label_868737467_end:
+goto Label_2048834776_start
+Label_2048834776_end:
   return
 .end method

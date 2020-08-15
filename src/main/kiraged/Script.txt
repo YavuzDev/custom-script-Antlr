@@ -1,5 +1,5 @@
 
-var randomNumber = randomInt(100);
+var randomNumber = randomInt(10);
 
 var guessed = false;
 
