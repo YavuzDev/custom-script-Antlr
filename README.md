@@ -1,4 +1,4 @@
-# KiragedScript
+# CustomScript
 
 School project made using Antlr to generate Java Bytecode from a custom made language.
 
