@@ -1,4 +1,4 @@
-Live example can be found here: https://kiraged-script.herokuapp.com/ (can take a while to load)
+Live example can be found here: https://kiraged-script.herokuapp.com/ (**can take a while to load**)
 
 # CustomScript
 
